@@ -21,11 +21,14 @@ export function Hero() {
           and background changes in minutes.
         </p>
         <button
-          type="button"
+          
           className={cn(
             "inline-flex items-center gap-2 rounded-xl bg-indigo-600 px-8 py-3.5 text-base font-semibold text-white",
             "transition hover:bg-indigo-500 hover:shadow-lg hover:shadow-indigo-500/25",
           )}
+          onClick={() => document.getElementById('upload')?.scrollIntoView({
+            behavior:"smooth"
+          })}
         >
           Upload Your Selfie
           <ArrowDown className="h-4 w-4" />
